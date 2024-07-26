@@ -1,0 +1,19 @@
+<html >
+<head>
+  <title>Machine Learning Model Deployment</title>
+</head>
+<body>
+ <div>
+    <h1>Predict Iris Species</h1>
+    <form action="{{ url_for('predict')}}" method="post">
+        <input type="text" name="sepal_length" placeholder="Sepal Length (cm)" required="required" />
+        <input type="text" name="sepal_width" placeholder="Sepal Width (cm)" required="required" />
+        <input type="text" name="petal_length" placeholder="Petal Length (cm)" required="required" />
+        <input type="text" name="petal_width" placeholder="Petal Width (cm)" required="required" />
+        <button type="submit">Predict</button>
+    </form>
+   <br>
+   {{ prediction_text }}
+ </div>
+</body>
+</html>
