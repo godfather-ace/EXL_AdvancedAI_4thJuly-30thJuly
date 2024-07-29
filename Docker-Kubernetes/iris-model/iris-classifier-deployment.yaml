@@ -4,10 +4,10 @@ kind: Deployment
 metadata:
   name: iris-predictor-deployment
 spec:
-  replicas: 1
   selector:
     matchLabels:
       app: iris-fastapi-service
+  replicas: 1
   template:
     metadata:
       labels:
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: iris-fastapi-service
-        image: mariazork/iris-fastapi-service:v1
+        image: sachin004/iris-fastapi-service:v1
         ports:
         - containerPort: 80
         env:
