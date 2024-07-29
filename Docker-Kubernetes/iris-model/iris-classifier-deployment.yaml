@@ -1,0 +1,23 @@
+# deployment yaml specification
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: iris-predictor-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: iris-fastapi-service
+  template:
+    metadata:
+      labels:
+        app: iris-fastapi-service
+    spec:
+      containers:
+      - name: iris-fastapi-service
+        image: mariazork/iris-fastapi-service:v1
+        ports:
+        - containerPort: 80
+        env:
+        - name: MODEL_FILE_NAME
+          value: "iris_model.pkl"
