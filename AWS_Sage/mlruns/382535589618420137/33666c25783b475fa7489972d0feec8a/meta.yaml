@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sachi/OneDrive/Desktop/AIM/Training/EXL_MLOps/AWS_Sage/mlruns/382535589618420137/33666c25783b475fa7489972d0feec8a/artifacts
+end_time: 1722332618643
+entry_point_name: ''
+experiment_id: '382535589618420137'
+lifecycle_stage: active
+run_id: 33666c25783b475fa7489972d0feec8a
+run_name: My model experiment
+run_uuid: 33666c25783b475fa7489972d0feec8a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722332603449
+status: 3
+tags: []
+user_id: sachi
